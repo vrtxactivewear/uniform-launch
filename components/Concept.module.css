@@ -1,0 +1,45 @@
+.concept {
+  width: 100%;
+  padding: 8rem 2rem;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  font-size: var(--font-size-5xl);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.8;
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .concept {
+    padding: 4rem 1.5rem;
+  }
+
+  .heading {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
