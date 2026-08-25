@@ -1,4 +1,4 @@
-/* Global Design Tokens */
+/* Premium Uniform Launch - Global Design System */
 :root {
   --color-primary: #D32F2F;
   --color-secondary: #1B3A8A;
@@ -7,6 +7,7 @@
   --color-bg: #000000;
   --color-text-secondary: #CCCCCC;
   --color-border: #333333;
+  --color-dark-bg: #0a0a0a;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -18,7 +19,6 @@
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  --font-mono: 'Courier New', monospace;
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -30,7 +30,8 @@
   --font-size-4xl: 3rem;
   --font-size-5xl: 3.5rem;
   --font-size-6xl: 4rem;
-  --font-size-7xl: 5rem;
+  --font-size-7xl: 5.5rem;
+  --font-size-8xl: 7rem;
 
   --transition-fast: 200ms;
   --transition-base: 300ms;
@@ -38,6 +39,7 @@
 
   --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-in-out: cubic-bezier(0.43, 0.13, 0.23, 0.96);
+  --ease-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -57,6 +59,8 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -78,7 +82,6 @@ img {
   height: auto;
 }
 
-/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -96,30 +99,28 @@ img {
   background: var(--color-accent);
 }
 
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 h1 {
-  font-size: var(--font-size-7xl);
+  font-size: var(--font-size-8xl);
 }
 
 h2 {
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-6xl);
 }
 
 h3 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4xl);
 }
 
 p {
   line-height: 1.8;
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -128,22 +129,13 @@ p {
   }
 }
 
-/* Selection */
 ::selection {
   background-color: var(--color-primary);
   color: var(--color-text);
 }
 
-/* Focus States */
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-}
-
-/* Container Query Support */
-@supports (container-type: inline-size) {
-  .container {
-    container-type: inline-size;
-  }
 }
