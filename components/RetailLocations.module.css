@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem 2rem;
   background: var(--color-bg);
   border-top: 1px solid var(--color-border);
 }
@@ -58,7 +58,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 4rem 1.5rem;
+    padding: 8rem 2rem 1.5rem;
   }
 
   .heading {
@@ -74,6 +74,6 @@
   .locationPlaceholder {
     aspect-ratio: 1;
     font-size: 0.85rem;
-    padding: 1rem;
+    padding: 8rem 2rem;
   }
 }

@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem 2rem;
   background: var(--color-bg);
   border-top: 1px solid var(--color-border);
 }
@@ -20,7 +20,7 @@
 }
 
 .description {
-  font-size: 1rem;
+  font-size: var(--font-size-4xl);
   text-align: center;
   color: var(--color-text-secondary);
   margin-bottom: 3rem;
@@ -89,7 +89,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 4rem 1.5rem;
+    padding: 8rem 2rem 1.5rem;
   }
 
   .heading {
