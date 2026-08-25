@@ -24,30 +24,22 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .imagePlaceholder {
-  width: 100%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.1) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0.1) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 40px 40px;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.875rem;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .content {
@@ -81,22 +73,24 @@
 }
 
 .primaryText {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
   margin: 0;
   text-transform: uppercase;
   word-spacing: 9999px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .secondaryText {
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .sponsors {
