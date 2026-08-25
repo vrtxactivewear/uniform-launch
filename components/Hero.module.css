@@ -36,17 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.2) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  color: rgba(255, 255, 255, 0.1);
-  font-size: 1.2rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 300;
+  background: url('/images/jersey-1st-hero.svg') no-repeat center / contain;
   position: relative;
   overflow: hidden;
 }
@@ -55,8 +45,13 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.05) 45%, rgba(255,255,255,0.05) 55%, transparent 55%);
-  background-size: 80px 80px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
 }
 
 .content {
